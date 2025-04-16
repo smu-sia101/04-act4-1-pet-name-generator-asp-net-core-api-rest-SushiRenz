@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.Configure<ProductsDatabaseSettings>(
     builder.Configuration.GetSection("ProductsDatabase"));
 
+
 builder.Services.AddSingleton<ProductsService>();
 
 var app = builder.Build();
